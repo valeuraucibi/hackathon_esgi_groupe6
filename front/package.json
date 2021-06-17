@@ -1,0 +1,72 @@
+{
+  "name": "vuejs-5iw2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "postinstall": "yarn build",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@vue-leaflet/vue-leaflet": "^0.6.0",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link": "^1.2.14",
+    "apollo-link-http": "^1.5.17",
+    "axios": "^0.21.0",
+    "bootstrap": "^5.0.1",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.6.5",
+    "date-fns": "^2.16.1",
+    "express": "^4.17.1",
+    "graphql": "^15.4.0",
+    "graphql-tag": "^2.11.0",
+    "leaflet": "^1.7.1",
+    "mariadb": "^2.5.3",
+    "material-design-icons": "^3.0.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "serve-static": "^1.14.1",
+    "toastify-js": "^1.9.3",
+    "vue": "^2.6.11",
+    "vue-apollo": "^3.0.5",
+    "vue-multiselect": "^2.1.6",
+    "vue-router": "^3.2.0",
+    "vue2-leaflet": "^2.7.0",
+    "vuejs-datepicker": "^1.6.2",
+    "vuex": "^3.6.0",
+    "yarn": "^1.22.10",
+    "yup": "^0.29.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-cli-plugin-apollo": "~0.22.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
