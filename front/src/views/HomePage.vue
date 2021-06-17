@@ -1,8 +1,13 @@
 <template>
 <div>
-  <h1>L’historique météo d’Infoclimat</h1>
-  <p>Bienvenue sur l’historique météo d’Infoclimat. 
+  
+  <div class="wrapper">
+    <div class="typing-demo">
+      L’historique météo d’Infoclimat
+    </div>
+    <p>Bienvenue sur l’historique météo d’Infoclimat. 
 Vous pourrez y retrouver des milliers d’événements extrêmes et plusieurs milliers de séries de valeurs météorologiques. </p>
+</div>
   <div class="container">
   <a href="/login" class="btn">
   <svg width="277" height="62">
@@ -12,7 +17,6 @@ Vous pourrez y retrouver des milliers d’événements extrêmes et plusieurs mi
             <stop offset="100%" stop-color="#E178ED" />
         </linearGradient>
     </defs>
-    
   </svg>
   <!--<span>Voir mes réalisations</span>-->
     <span>Expert</span>
@@ -25,7 +29,6 @@ Vous pourrez y retrouver des milliers d’événements extrêmes et plusieurs mi
             <stop offset="100%" stop-color="#E178ED" />
         </linearGradient>
     </defs>
-     
   </svg>
   <!--<span>Voir mes réalisations</span>-->
     <span>Novice</span>
@@ -38,6 +41,7 @@ Vous pourrez y retrouver des milliers d’événements extrêmes et plusieurs mi
             <stop offset="100%" stop-color="#E178ED" />
         </linearGradient>
     </defs>
+
   </svg>
   <!--<span>Voir mes réalisations</span>-->
     <span>Jeunes</span>
@@ -57,12 +61,40 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1 {
-  color:black;
-  font-family: Verdana, sans-serif; 
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  margin-top: 0%;
+  margin-left: 10%;
+  justify-content: left;
 }
-p {
-  font-family: Verdana, sans-serif; 
+
+.typing-demo {
+  width: 31ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+h1 {
+  margin-top: 0%;
+    color: #c3c3bb;
+    font-family: Verdana, sans-serif;
+    margin-left: 10%;
 }
 body{
   width: 100%;
@@ -72,18 +104,14 @@ body{
  
 }
 .container{
-  height:100%;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-p {
-  margin-left: 5%;
-  color:black;
+  height:80%;
+ position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .btn {
-    margin-top: calc(20% + 0px);
+    margin-top: calc(30% + 25px);
     position: relative;
     display: inline-block;
     width: 277px;
@@ -96,7 +124,7 @@ p {
     background-color: transparent;
     cursor: pointer;
     text-decoration:none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Verdana', sans-serif;
     font-weight:900;
     font-size:17px;
     letter-spacing: 0.045em;
@@ -109,7 +137,6 @@ p {
 }
 
 .btn svg rect {
-    stroke: #78cdf5;
     stroke-width: 4;
     stroke-dasharray: 353, 0;
     stroke-dashoffset: 0;
@@ -119,10 +146,9 @@ p {
 
 .btn span{
   background: rgb(255,130,130);
-  background: -moz-linear-gradient(left,  rgba(255,130,130,1) 0%, rgba(225,120,237,1) 100%);
-  background: -webkit-linear-gradient(left,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
-  background: linear-gradient(to right,  rgb(117, 233,255) 0%,rgba(162,119,167,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+  background: -moz-linear-gradient(left,  rgb(240, 213, 213) 0%, rgba(225,120,237,1) 100%);
+  background: -webkit-linear-gradient(left,  rgb(184, 163, 163) 0%,rgba(225,120,237,1) 100%);
+  background: linear-gradient(to right,  rgb(138, 129, 129) 0%,rgba(225,120,237,1) 100%);
   
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -132,6 +158,6 @@ p {
     stroke-width: 4;
     stroke-dasharray: 196, 543;
     stroke-dashoffset: 437;
-}
-   
+}  
 </style>
+
