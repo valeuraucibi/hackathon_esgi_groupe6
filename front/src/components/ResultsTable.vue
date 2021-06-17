@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="row">
-            <table class="striped">
+            <table class="striped responsive-table">
                 <thead>
                     <tr>
                         <th>Nom</th>
@@ -31,14 +31,16 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Test</td>
-                        <td>Test</td>
-                        <td>Test</td>
-                        <td>Test</td>
-                        <td>Test</td>
-                        <td>Test</td>
-                        <td>Test</td>
+                    <tr v-for="event in events" :key="event.id">
+                        <td><a href="" >{{ event.nom == '' ? '-' : event.nom }}</a></td>
+                        <td>{{ event.importance  }}</td>
+                        <td>{{ event.dateDeb }}</td>
+                        <td>{{ event.dateFin }}</td>
+                        <td>{{ event.duree }}</td>
+                        <td>
+                            <ul><li style="list-style-type: circle;" v-for="type in enumerateToArray(event.type)" :key="type">{{ types.get(parseInt(type)) }}</li></ul>
+                        </td>
+                        <td><ul><li style="list-style-type: circle;" v-for="localisation in enumerateToArray(event.localisation)" :key="localisation">{{ localisations.get(parseInt(localisation)) != null ?  localisations.get(parseInt(localisation))  : 'Introuvable' }}</li></ul></td>
                         <td>Test</td>
                     </tr>
                     <tr>
@@ -59,16 +61,44 @@
 </template>
 
 <script>
+import axios from 'axios';
+import { eventTypes,  localisations } from './utils/Tableaux';
+
 export default {
-    name: 'ResultsTable'
+    name: 'ResultsTable',
+    data() {
+        return {
+            events: [],
+            types: eventTypes,
+            localisations: localisations
+        }
+    },
+    async mounted() {
+       let res = await axios.get('https://localhost/historic_events');
+       this.events = res.data;
+       console.log();
+    },
+    methods: {
+        enumerateToArray(types) {
+            return types.split(',');
+        }
+    }
 }
 </script>
 
 <style scoped>
-table, th, td {
+table, th {
     color: black;
-    padding: 0px 10px;
+}
+a {
+    color: blue;
+    line-height: unset ;
+}
+td {
+    padding: 15px 10px;
+    line-height: 25px; 
+    word-wrap: break-word;
+    max-width: 150px;
 }
 
-  
 </style>
