@@ -12,7 +12,7 @@ body {
     color: #ffffff;
   }
   #router {
-    margin-left: 40%;
+    margin-left: 35%;
     padding: 10px; 
     
   }
@@ -23,6 +23,9 @@ body {
   #router-logout {
     margin-left: 5%;
     padding: 5px; 
+  }
+  #router-home {
+    margin-left:5%
   }
   #logo{
         display: flex;
@@ -40,8 +43,9 @@ body {
 <template>
 <div id="app">
 <nav id="navbarElement"> 
-    <router-link id="router" to="/">Home</router-link>
-    <router-link id="" to="/quiz">Quiz</router-link>
+    <router-link id="router-home" to="/">Home</router-link>
+    <router-link id="router" to="/quiz">Quiz</router-link>
+    <router-link id="" to="/tuto">Tutos</router-link>
     <router-link id="router-login" to="/login">Log In</router-link>
   <router-view/>
   <li v-if="logged" ><a @click.prevent="logOut">Log out</a></li>
