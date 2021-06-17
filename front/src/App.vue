@@ -1,11 +1,12 @@
 <style>
 body {
     background-image: url("./assets/background.jpeg");
+    background-repeat: no repeat;
 }
 
   #navbarElement {
     height: 56px;
-    background-color: transparent;
+    background-color:  #4db6ac !important;
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
