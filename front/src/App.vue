@@ -1,14 +1,12 @@
 <style>
-body {
-    background-image: url("./assets/background.jpeg");
-}
+
 
   #navbarElement {
     height: 56px;
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #ffffff;
+    color: #000000;
   }
   #router {
     margin-left: 40%;

@@ -1,5 +1,7 @@
 import HomePage from "../views/HomePage";
 import Quiz from "../components/Quiz";
+import QuizExperts from "../components/QuizExperts";
+import QuizNovice from "../components/QuizNovice";
 import Login from "../views/Login";
 import Novice from "../views/Novice";
 import Tuto from "../views/Tuto";
@@ -18,9 +20,19 @@ export default [
         component: HomePage
     },
     {
-        path: '/quiz',
+        path: '/quiz/jeune',
         name: 'Quiz',
         component: Quiz
+    },
+    {
+        path: '/quiz/experts',
+        name: 'QuizExperts',
+        component: QuizExperts
+    },
+    {
+        path: '/quiz/novice',
+        name: 'QuizNovice',
+        component: QuizNovice
     },
     {
         name: "Tuto",
