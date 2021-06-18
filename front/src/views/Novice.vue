@@ -36,6 +36,7 @@ export default {
 <style>
 p {
   font-family: Verdana, sans-serif; 
+  color: white;
 }
 h1 {
   color: black;

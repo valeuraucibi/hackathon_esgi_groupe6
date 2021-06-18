@@ -36,7 +36,7 @@ Vous pourrez y retrouver des milliers d’événements extrêmes et plusieurs mi
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h5><a href="/quiz">Jeunes</a></h5>
+            <h5><a href="/quiz/jeune">Jeunes</a></h5>
 
             <p class="light">Vous souhaitez en apprendre plus sur la météo et ses phénomènes tout en vous amusant ? Des quizs pour tous les niveaux et pour tous les goûts. Devenez incollable sur la météo, le climat et l’environnement. C’est parti !
 </p>
