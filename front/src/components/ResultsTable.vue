@@ -4,10 +4,12 @@
             
             <div class="col m6">
                 <select >
-                    <option value="">Froid</option>
                     <option value="">Froid inhabituel</option>
-                    <option value="">Gelées tardives</option>
+                    <option value="">Cyclone</option>
                     <option value="">Gelées précoces</option>
+                    <option value="">Orages</option>
+                    <option value="">Tempête tropicales</option>
+                    <option value="">Tornade</option>
                 </select>
             </div>
             <div class="col m6">

@@ -36,7 +36,7 @@ export default {
     LControlLayers,
     LGeoJson
   },
-  data() {
+  data: () => {
     return {
       center: latLng(46.227638, 2.213749),
       zoom: 5,
@@ -67,17 +67,14 @@ export default {
         };
       };
     },
-    
-    onEachFeatureFunction() {
-      /* if (!this.enableTooltip) {
-        return () => {};
-      } */
+    onEachFeatureFunction : () => {
       return (feature, layer) => {
         layer.on({
           click: async function() {
             let regionCode = feature.properties.code;
             let res = await axios.get('https://localhost/historic_events?localisation='+regionCode);
-            console.log(res);          
+            let events = res.data;
+            console.log(events)
           }
         })
         layer.bindTooltip(

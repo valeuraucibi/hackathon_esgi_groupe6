@@ -10,7 +10,7 @@
     <Map/>
   </div>  
   <div class="row">
-    <ResultsTable/>
+    <ResultsTable v-on:testevent="handleEvent"/>
   </div>
 </div>
 </template>
@@ -24,6 +24,11 @@ export default {
     components: {
         Map,
         ResultsTable
+    },
+    methods: {
+      handleEvent() {
+        console.log('OHJIOUHJGHOJKH')
+      }
     }
 }
 </script>
