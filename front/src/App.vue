@@ -50,6 +50,7 @@ background-size: auto;
     <router-link id="router-home" to="/">Home</router-link>
     <router-link id="router" to="/quiz">Quiz</router-link>
     <router-link id="" to="/tuto">Tutos</router-link>
+    <router-link id="expert" to="/expert">Expert</router-link>
     <router-link id="router-login" to="/login">Log In</router-link>
   <router-view/>
   <li v-if="logged" ><a @click.prevent="logOut">Log out</a></li>

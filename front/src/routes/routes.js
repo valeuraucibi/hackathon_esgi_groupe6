@@ -5,6 +5,7 @@ import QuizNovice from "../components/QuizNovice";
 import Login from "../views/Login";
 import Novice from "../views/Novice";
 import Tuto from "../views/Tuto";
+import Expert from "../views/Expert"
 
 //import Profile from "../views/Profile";
 //import Proposals from "../views/Proposale";
@@ -50,5 +51,11 @@ export default [
         path: '/novice',
         component: Novice,
         roles: ["anonyme"]
-    }
+    },
+	{
+		name: "Expert",
+		path: '/expert',
+		component: Expert,
+		roles: ["anonyme"]
+	}
 ];

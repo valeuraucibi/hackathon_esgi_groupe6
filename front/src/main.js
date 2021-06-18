@@ -4,12 +4,10 @@ import { router } from "./routes";
 import store from "./store";
 import axios from "axios";
 import 'leaflet/dist/leaflet.css';
+import { BootstrapVue } from 'bootstrap-vue'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
-
-import 'materialize-css/dist/css/materialize.min.css';
-import 'material-design-icons/iconfont/material-icons.css';
 
 Vue.config.productionTip = false;
 axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
@@ -39,6 +37,8 @@ axios.interceptors.request.use(function(config) {
 
     return config;
 });
+
+Vue.use(BootstrapVue);
 
 new Vue({
     router,
