@@ -3,7 +3,7 @@
         <div class="row">
             
             <div class="col m6">
-                <select>
+                <select >
                     <option value="">Froid</option>
                     <option value="">Froid inhabituel</option>
                     <option value="">Gelées tardives</option>
@@ -27,32 +27,31 @@
                         <th>Durée</th>
                         <th>Type</th>
                         <th>Localisation</th>
-                        <th>Description</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr v-for="event in events" :key="event.id">
                         <td><a href="" >{{ event.nom == '' ? '-' : event.nom }}</a></td>
                         <td>{{ event.importance  }}</td>
-                        <td>{{ event.dateDeb }}</td>
-                        <td>{{ event.dateFin }}</td>
+                        <td>{{ formatDt(new Date(event.dateDeb)) }}</td>
+                        <td>{{ formatDt(new Date(event.dateFin)) }}</td>
                         <td>{{ event.duree }}</td>
                         <td>
-                            <ul><li style="list-style-type: circle;" v-for="type in enumerateToArray(event.type)" :key="type">{{ types.get(parseInt(type)) }}</li></ul>
+                            <ul>
+                                <li style="list-style-type: circle;" v-for="type in enumerateToArray(event.type)" :key="type">
+                                    {{ types.get(parseInt(type)) }}
+                                </li>
+                            </ul>
                         </td>
-                        <td><ul><li style="list-style-type: circle;" v-for="localisation in enumerateToArray(event.localisation)" :key="localisation">{{ localisations.get(parseInt(localisation)) != null ?  localisations.get(parseInt(localisation))  : 'Introuvable' }}</li></ul></td>
-                        <td>Test</td>
+                        <td>
+                            <ul>
+                                <li style="list-style-type: circle;" v-for="localisation in enumerateToArray(event.localisation)" :key="localisation">
+                                    {{ localisations.get(parseInt(localisation)) != null ?  localisations.get(parseInt(localisation))  : 'Introuvable' }}
+                                </li>
+                            </ul>
+                        </td>
                     </tr>
-                    <tr>
-                        <td>Test</td>
-                        <td>Test</td>
-                        <td>Test</td>
-                        <td>Test</td>
-                        <td>Test</td>
-                        <td>Test</td>
-                        <td>Test</td>
-                        <td>Test</td>
-                    </tr>
+
                 </tbody>
             </table>
         
@@ -63,6 +62,7 @@
 <script>
 import axios from 'axios';
 import { eventTypes,  localisations } from './utils/Tableaux';
+import DateUtils from './utils/DateUtils';
 
 export default {
     name: 'ResultsTable',
@@ -70,22 +70,26 @@ export default {
         return {
             events: [],
             types: eventTypes,
-            localisations: localisations
+            localisations: localisations 
         }
     },
     async mounted() {
        let res = await axios.get('https://localhost/historic_events');
        this.events = res.data;
-       console.log();
+       console.log(DateUtils);
     },
     methods: {
         enumerateToArray(types) {
             return types.split(',');
+        },
+        formatDt(dt) {
+            return DateUtils.formatDate(dt, 'dd/MM/yyyy')
         }
     }
 }
-</script>
 
+
+</script>
 <style scoped>
 table, th {
     color: black;
@@ -99,6 +103,10 @@ td {
     line-height: 25px; 
     word-wrap: break-word;
     max-width: 150px;
+}
+select {
+    display: block;
+    margin-top: 13px;
 }
 
 </style>

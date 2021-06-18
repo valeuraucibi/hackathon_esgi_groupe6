@@ -26,6 +26,8 @@ import {
 } from "vue2-leaflet";
 import "leaflet/dist/leaflet.css";
 import { latLng } from "leaflet";
+import axios from 'axios';
+
 export default {
   name: "Map",
   components: {
@@ -72,7 +74,11 @@ export default {
       } */
       return (feature, layer) => {
         layer.on({
-          click: this.whenClicked
+          click: async function() {
+            let regionCode = feature.properties.code;
+            let res = await axios.get('https://localhost/historic_events?localisation='+regionCode);
+            console.log(res);          
+          }
         })
         layer.bindTooltip(
           "<div>code:" +
@@ -107,12 +113,7 @@ export default {
         this.iconWidth = Math.floor(this.iconHeight / 2);
       }
     },
-    whenClicked() {
-    // e = event
-   (alert('test'));
-    // You can make your ajax call declaration here
-    //$.ajax(... 
-    }
+    
 
   },
 };
