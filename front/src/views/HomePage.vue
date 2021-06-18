@@ -4,7 +4,7 @@
   <p>Bienvenue sur l’historique météo d’Infoclimat. 
 Vous pourrez y retrouver des milliers d’événements extrêmes et plusieurs milliers de séries de valeurs météorologiques. </p>
   <div class="container">
-  <a href="/login" class="btn">
+  <a href="/expert" class="btn">
   <svg width="277" height="62">
     <defs>
         <linearGradient id="grad1">

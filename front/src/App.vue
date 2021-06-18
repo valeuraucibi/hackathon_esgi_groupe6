@@ -32,7 +32,7 @@
 
 <template>
 <div id="app">
-<nav id="navbarElement"> 
+<nav id="navbarElement">
     <router-link id="router" to="/">Home</router-link>
     <router-link id="router" to="/quiz">Quiz</router-link>
     <router-link id="router-logout" to="/login">Log In</router-link>

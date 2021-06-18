@@ -162,5 +162,269 @@ class Stations
      */
     private $lastData;
 
+	/**
+	 * @return int
+	 */
+	public function getUniqueid(): int {
+		return $this->uniqueid;
+	}
 
+	/**
+	 * @param int $uniqueid
+	 */
+	public function setUniqueid(int $uniqueid): void {
+		$this->uniqueid = $uniqueid;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getId(): string {
+		return $this->id;
+	}
+
+	/**
+	 * @param string $id
+	 */
+	public function setId(string $id): void {
+		$this->id = $id;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getGenre(): string {
+		return $this->genre;
+	}
+
+	/**
+	 * @param string $genre
+	 */
+	public function setGenre(string $genre): void {
+		$this->genre = $genre;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getLibelle(): string {
+		return $this->libelle;
+	}
+
+	/**
+	 * @param string $libelle
+	 */
+	public function setLibelle(string $libelle): void {
+		$this->libelle = $libelle;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getDepartement(): string {
+		return $this->departement;
+	}
+
+	/**
+	 * @param string $departement
+	 */
+	public function setDepartement(string $departement): void {
+		$this->departement = $departement;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getPays(): string {
+		return $this->pays;
+	}
+
+	/**
+	 * @param string $pays
+	 */
+	public function setPays(string $pays): void {
+		$this->pays = $pays;
+	}
+
+	/**
+	 * @return float
+	 */
+	public function getLatitude(): float|string {
+		return $this->latitude;
+	}
+
+	/**
+	 * @param float $latitude
+	 */
+	public function setLatitude(float|string $latitude): void {
+		$this->latitude = $latitude;
+	}
+
+	/**
+	 * @return float
+	 */
+	public function getLongitude(): float|string {
+		return $this->longitude;
+	}
+
+	/**
+	 * @param float $longitude
+	 */
+	public function setLongitude(float|string $longitude): void {
+		$this->longitude = $longitude;
+	}
+
+	/**
+	 * @return int
+	 */
+	public function getAltitude(): int|string {
+		return $this->altitude;
+	}
+
+	/**
+	 * @param int $altitude
+	 */
+	public function setAltitude(int|string $altitude): void {
+		$this->altitude = $altitude;
+	}
+
+	/**
+	 * @return bool
+	 */
+	public function isOrientation(): bool {
+		return $this->orientation;
+	}
+
+	/**
+	 * @param bool $orientation
+	 */
+	public function setOrientation(bool $orientation): void {
+		$this->orientation = $orientation;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getStationReference(): string {
+		return $this->stationReference;
+	}
+
+	/**
+	 * @param string $stationReference
+	 */
+	public function setStationReference(string $stationReference): void {
+		$this->stationReference = $stationReference;
+	}
+
+	/**
+	 * @return int
+	 */
+	public function getPasDeSynop(): int|string {
+		return $this->pasDeSynop;
+	}
+
+	/**
+	 * @param int $pasDeSynop
+	 */
+	public function setPasDeSynop(int|string $pasDeSynop): void {
+		$this->pasDeSynop = $pasDeSynop;
+	}
+
+	/**
+	 * @return bool
+	 */
+	public function isClimatoOnly(): bool|string {
+		return $this->climatoOnly;
+	}
+
+	/**
+	 * @param bool $climatoOnly
+	 */
+	public function setClimatoOnly(bool|string $climatoOnly): void {
+		$this->climatoOnly = $climatoOnly;
+	}
+
+	/**
+	 * @return \DateTime|null
+	 */
+	public function getDhMinClimato(): ?\DateTime {
+		return $this->dhMinClimato;
+	}
+
+	/**
+	 * @param \DateTime|null $dhMinClimato
+	 */
+	public function setDhMinClimato(?\DateTime $dhMinClimato): void {
+		$this->dhMinClimato = $dhMinClimato;
+	}
+
+	/**
+	 * @return \DateTime|null
+	 */
+	public function getDhMinLive(): ?\DateTime {
+		return $this->dhMinLive;
+	}
+
+	/**
+	 * @param \DateTime|null $dhMinLive
+	 */
+	public function setDhMinLive(?\DateTime $dhMinLive): void {
+		$this->dhMinLive = $dhMinLive;
+	}
+
+	/**
+	 * @return \DateTime|null
+	 */
+	public function getDhOuverture(): ?\DateTime {
+		return $this->dhOuverture;
+	}
+
+	/**
+	 * @param \DateTime|null $dhOuverture
+	 */
+	public function setDhOuverture(?\DateTime $dhOuverture): void {
+		$this->dhOuverture = $dhOuverture;
+	}
+
+	/**
+	 * @return bool
+	 */
+	public function isBaseClimato(): bool|string {
+		return $this->baseClimato;
+	}
+
+	/**
+	 * @param bool $baseClimato
+	 */
+	public function setBaseClimato(bool|string $baseClimato): void {
+		$this->baseClimato = $baseClimato;
+	}
+
+	/**
+	 * @return \DateTime
+	 */
+	public function getLastReport(): \DateTime {
+		return $this->lastReport;
+	}
+
+	/**
+	 * @param \DateTime $lastReport
+	 */
+	public function setLastReport(\DateTime $lastReport): void {
+		$this->lastReport = $lastReport;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getLastData(): string {
+		return $this->lastData;
+	}
+
+	/**
+	 * @param string $lastData
+	 */
+	public function setLastData(string $lastData): void {
+		$this->lastData = $lastData;
+	}
 }
