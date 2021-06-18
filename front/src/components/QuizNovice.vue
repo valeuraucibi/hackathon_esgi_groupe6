@@ -22,7 +22,7 @@
 			<div class="card__content"> 
 				<div>
 					<h2>Questionnaire novice </h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<p>Devenez incollables et épatez vos amis !</p>
                <b-button @click="startQuizFunc()" href="#top" class="btn">Complétez le quiz !</b-button>
 				</div>
 				<figure>

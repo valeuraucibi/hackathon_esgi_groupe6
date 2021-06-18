@@ -22,7 +22,7 @@
 			<div class="card__content"> 
 				<div>
 					<h2>Questionnaire experts </h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<p>Testez vos connaissances météorologiques !</p>
                <b-button @click="startQuizFunc()" href="#top" class="btn">Complétez le quiz !</b-button>
 				</div>
 				<figure>
