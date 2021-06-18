@@ -1,7 +1,11 @@
 <style>
 body {
-    background-image: url("./assets/background.jpeg");
-    background-repeat: no repeat;
+background-image: url("./assets/background.jpeg");
+
+background-size: 50%;
+background-size: 3.2em;
+background-size: 12px;
+background-size: auto;
 }
 
 
@@ -15,7 +19,6 @@ body {
   #router {
     margin-left: 35%;
     padding: 10px; 
-    
   }
   #router-login {
     margin-left: 35%;
