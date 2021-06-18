@@ -21,8 +21,8 @@
 		<li class="card" id="card_1">
 			<div class="card__content"> 
 				<div>
-					<h2>Questionnaire jeune </h2>
-					<p>C’est le moment de prouver à votre prof de SVT que vous en avez dans le ciboulot !</p>
+					<h2>Questionnaire novice </h2>
+					<p>Devenez incollables et épatez vos amis !</p>
                <b-button @click="startQuizFunc()" href="#top" class="btn">Complétez le quiz !</b-button>
 				</div>
 				<figure>
@@ -89,48 +89,49 @@
  
              questions : [
        {
-          questionText: 'Quel genre de nuage n’existe pas ?',
+          questionText: 'Quel type de tempêtes n’existe pas ?',
           answerOptions: [
-             { answerText: 'Cirrus', isCorrect: false },
-            { answerText: 'Stratus', isCorrect: false },
-             { answerText: 'Cumulus', isCorrect: false },
-             { answerText: 'Stratosphérus', isCorrect: true },
+             { answerText: 'Les tempêtes océaniques', isCorrect: false },
+             { answerText: 'Les tempêtes continentales', isCorrect: true },
+             { answerText: 'Les tempêtes méditerranéennes', isCorrect: false },
                  
           
           ],
        },
        {
-          questionText: 'Qu’est-ce que le réchauffement climatique ?',
+          questionText: 'Que s’est-il passé en décembre 1999 en France ?',
           answerOptions: [
-             { answerText: 'Une augmentation insignifiante de la température', isCorrect: false },
-             { answerText: 'Augmentation des températures moyennes', isCorrect: true },
-             { answerText: 'Cool pour les vacances à Saint Trop', isCorrect: false },
-             { answerText: 'Je ne sais pas', isCorrect: false },
+             { answerText: 'Un ouragan', isCorrect: false },
+             { answerText: 'Un tsunami', isCorrect: false },
+             { answerText: 'Une tempête', isCorrect: true },
+             { answerText: 'Une canicule', isCorrect: false },
           ],
        },
        {
-          questionText: 'A-t-on déjà observé une tornade en France ?',
+          questionText: 'Quel est le record de chaleur en France ?',
           answerOptions: [
-             { answerText: 'Oui', isCorrect: true },
-             { answerText: 'Non', isCorrect: false },
+             { answerText: '50°', isCorrect: false },
+             { answerText: '46°', isCorrect: true },
+             { answerText: '37°', isCorrect: false },
+             { answerText: '55°', isCorrect: false },
           ],
        },
        {
-          questionText: 'De quoi est composé un nuage ?',
+          questionText: 'Qu’est-ce qui provoque la fonte des glaces ?',
           answerOptions: [
-             { answerText: 'De coton', isCorrect: false },
-             { answerText: 'De barbe à papa', isCorrect: false },
-             { answerText: "De petites gouttelettes d'eau", isCorrect: true },
-             { answerText: 'De toiles d’araignées', isCorrect: false },
+             { answerText: 'Rien c’est normal', isCorrect: false },
+             { answerText: 'La baisse des température', isCorrect: false },
+             { answerText: "Le réchauffement climatique", isCorrect: true },
+             { answerText: 'Le soleil est de plus en plus fort', isCorrect: false },
           ],
          },
          {
-          questionText: 'A quelle température peut-on considérer que c’est une canicule ?',
+          questionText: 'Quel est le climat en France ?',
           answerOptions: [
-             { answerText: 'Dès qu’il fait plus de 30°', isCorrect: false },
-             { answerText: 'Dès que j’ai chaud', isCorrect: false },
-             { answerText: 'Dès qu’il fait plus de 20°', isCorrect: false },
-             { answerText: 'Lorsque pendant au moins trois jours, les températures minimales, en particulier la nuit, sont au-dessus de 20 °C et les températures maximales supérieures à 33 °C', isCorrect: true },
+             { answerText: 'Climat tempéré', isCorrect: true },
+             { answerText: 'Climat continental', isCorrect: false },
+             { answerText: 'Climat océanique', isCorrect: false },
+             { answerText: 'Climat de montagne', isCorrect: false },
           ],
          },
      ],

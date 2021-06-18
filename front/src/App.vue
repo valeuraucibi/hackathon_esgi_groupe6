@@ -4,12 +4,13 @@ body {
     background-repeat: no repeat;
 }
 
+
   #navbarElement {
     height: 56px;
     background-color:  #4db6ac !important;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #ffffff;
+    color: #000000;
   }
   #router {
     margin-left: 35%;
