@@ -27,7 +27,7 @@ export default {
     },
     methods: {
       handleEvent() {
-        console.log('OHJIOUHJGHOJKH')
+        console.log('')
       }
     }
 }
@@ -35,7 +35,6 @@ export default {
 
 <style>
 p {
-  color:black;
   font-family: Verdana, sans-serif; 
 }
 h1 {

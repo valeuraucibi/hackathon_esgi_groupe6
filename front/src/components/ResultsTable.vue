@@ -94,7 +94,7 @@ export default {
 </script>
 <style scoped>
 table, th {
-    color: black;
+    color: white;
 }
 a {
     color: blue;
