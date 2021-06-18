@@ -53,7 +53,7 @@ Vous pourrez y retrouver des milliers d’événements extrêmes et plusieurs mi
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h5><a href="/map">Novice</a></h5>
+            <h5><a href="/novice">Novice</a></h5>
             <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
           </div>
         </div>
