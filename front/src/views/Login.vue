@@ -6,12 +6,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
-    background-image: url("../assets/background.jpg");
-    background-repeat: no-repeat;
-    /*background-position-y: -10vh;*/
-    background-position: absolute;
-    background-size: cover;
   }
 
   .login .card{

@@ -1,137 +1,114 @@
 <template>
-<div>
-  <h1>L’historique météo d’Infoclimat</h1>
-  <p>Bienvenue sur l’historique météo d’Infoclimat. 
-Vous pourrez y retrouver des milliers d’événements extrêmes et plusieurs milliers de séries de valeurs météorologiques. </p>
+  <div>
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>L’historique météo d’Infoclimat
+</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">L’historique météo d’Infoclimat
+</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Bienvenue sur l’historique météo d’Infoclimat. 
+Vous pourrez y retrouver des milliers d’événements extrêmes et plusieurs milliers de séries de valeurs météorologiques.</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <div class="container">
-  <a href="/login" class="btn">
-  <svg width="277" height="62">
-    <defs>
-        <linearGradient id="grad1">
-            <stop offset="0%" stop-color="#FF8282"/>
-            <stop offset="100%" stop-color="#E178ED" />
-        </linearGradient>
-    </defs>
-    
-  </svg>
-  <!--<span>Voir mes réalisations</span>-->
-    <span>Expert</span>
-</a>
-<a href="/novice" class="btn">
-  <svg width="277" height="62">
-    <defs>
-        <linearGradient id="grad1">
-            <stop offset="0%" stop-color="#FF8282"/>
-            <stop offset="100%" stop-color="#E178ED" />
-        </linearGradient>
-    </defs>
-     
-  </svg>
-  <!--<span>Voir mes réalisations</span>-->
-    <span>Novice</span>
-</a>
-<a href="/Quiz" class="btn">
-  <svg width="277" height="62">
-    <defs>
-        <linearGradient id="grad1">
-            <stop offset="0%" stop-color="#FF8282"/>
-            <stop offset="100%" stop-color="#E178ED" />
-        </linearGradient>
-    </defs>
-  </svg>
-  <!--<span>Voir mes réalisations</span>-->
-    <span>Jeunes</span>
-</a>
-</div>
-</div>
+    <div id="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h5><a href="/quiz">Jeune</a></h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+           <h5> <a href="/expert">Expert</a></h5>
+            
+
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h5><a href="/map">Novice</a></h5>
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
+
+  </div>
 </template>
-
-<script>
-export default {
-  name: 'HomePage',
-  props: {
-    msg: String
-  }
-}
-</script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1 {
-  color:black;
-  font-family: Verdana, sans-serif; 
+.container {
+  color:white;
 }
 p {
-  font-family: Verdana, sans-serif; 
+  color: rgb(173, 173, 173);
 }
-body{
-  width: 100%;
-  height:80%;
-  position:relative;
-  overflow:hidden;
- 
+#section {
+    color:white;
 }
-.container{
-  height:100%;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-p {
-  margin-left: 5%;
-  color:black;
-}
-.btn {
-    margin-top: calc(20% + 0px);
-    position: relative;
-    display: inline-block;
-    width: 277px;
-    height: 50px;
-    font-size: 1em;
-    font-weight: bold;
-    line-height: 60px;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: transparent;
-    cursor: pointer;
-    text-decoration:none;
-    font-family: 'Roboto', sans-serif;
-    font-weight:900;
-    font-size:17px;
-    letter-spacing: 0.045em;
+a:hover {
+  background-color: rgb(226, 222, 198);
 }
 
-.btn svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.btn svg rect {
-    stroke: #78cdf5;
-    stroke-width: 4;
-    stroke-dasharray: 353, 0;
-    stroke-dashoffset: 0;
-    -webkit-transition: all 600ms ease;
-    transition: all 600ms ease;
-}
-
-.btn span{
-  background: rgb(255,130,130);
-  background: -moz-linear-gradient(left,  rgba(255,130,130,1) 0%, rgba(225,120,237,1) 100%);
-  background: -webkit-linear-gradient(left,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
-  background: linear-gradient(to right,  rgb(117, 233,255) 0%,rgba(162,119,167,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
-  
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.btn:hover svg rect {
-    stroke-width: 4;
-    stroke-dasharray: 196, 543;
-    stroke-dashoffset: 437;
-}
-   
 </style>
